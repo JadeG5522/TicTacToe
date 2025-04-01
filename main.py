@@ -87,8 +87,7 @@ def draw_player(player, player_input):
         player_won(1)
     elif check_if_won(inputs["player_2"]):
         player_won(2)
-
-    if len(total_inputs) == 9: ##check if there is a tie AFTER turn
+    elif len(total_inputs) == 9: ##check if there is a tie AFTER turn
         player_won(0)
 
 def ai_move():
